@@ -38,7 +38,7 @@ if selected == "Home":
         col2.markdown("#   ")
 
 #building connection with youtube api
-api_key="AIzaSyA_jlArKgTqnqjx3u3K9zPD87RBulv6mzo"
+api_key="*************************"
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 
@@ -136,7 +136,7 @@ def get_comments_details(v_id):
 local_client=MongoClient("mongodb://localhost:27017")
 db=local_client["youtube_data"]
 
-sql_db=sql.connect(host="127.0.0.1",user="root",password="Vishnu@1987",database="youtube data harvesting")
+sql_db=sql.connect(host="127.0.0.1",user="root",password="******",database="youtube data harvesting")
 mycursor=sql_db.cursor()
 
 
